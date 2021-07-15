@@ -1,21 +1,17 @@
-import * as React from 'react'
-import Link from 'next/link'
-import Head from 'next/head'
+import React, {useCallback} from 'react'
+import styles from 'styles/first-post.module.scss'
+
 
 export default function FirstPost() {
-  const clickMe = React.useCallback(() => {
+  const clickMe = useCallback(() => {
     console.log('click me')
   }, [])
   return (
     <React.Fragment>
-      <Head>
-        <title>第一篇文章</title>
-        <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1" />
-      </Head>
-      <div>
-        First Post
-        <hr />
-        回到首页<Link href="/"><a>点击这里</a></Link>
+      <div className={styles.wrapper}>
+        <div className={styles.content}>
+          内容
+        </div>
       </div>
     </React.Fragment>
   )

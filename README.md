@@ -32,3 +32,15 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+---
+
+局部 CSS
+官方支持
+默认支持styled-jsx 和 CSS Modules
+一般来说简单 需求用前者，复杂需求用后者
+
+个人偏好
+styled-jsx 不方便分离CSS 和 JS （虽然也可以）
+CSS Module 用起来很麻烦
+最香的 styled-components
