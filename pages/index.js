@@ -1,5 +1,6 @@
 import jpg from 'assets/images/1.jpg'
 
+console.log(jpg);
 export default function Index() {
   return (
     <div>
